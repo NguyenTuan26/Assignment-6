@@ -1,0 +1,20 @@
+ArrayList: Kích thước động. Có thể thay đổi (tăng/giảm) số lượng phần tử.
+*Type:
+Array: Có thể là mảng của kiểu dữ liệu nguyên thủy (primitive types) hoặc đối tượng (objects).
+ArrayList: Chỉ lưu trữ các đối tượng. Nếu muốn lưu kiểu nguyên thủy, cần sử dụng các lớp wrapper
+(như Integer, Double).
+*Hiệu năng:
+Array: Hiệu năng tốt hơn khi làm việc với số lượng lớn phần tử vì không có overhead 
+của việc điều chỉnh kích thước.
+ArrayList: Có overhead khi tăng kích thước, nhưng tiện lợi hơn trong nhiều trường hợp.
+Câu 2:
+-Các method phổ biến khi thao tác với ArrayList
++add(E e): Thêm phần tử vào cuối danh sách.
++add(int index, E element): Chèn phần tử vào vị trí chỉ định.
++get(int index): Truy cập phần tử tại vị trí chỉ định.
++set(int index, E element): Cập nhật phần tử tại vị trí chỉ định.
++remove(int index): Xóa phần tử tại vị trí chỉ định.
++size(): Trả về số lượng phần tử trong danh sách.
++clear(): Xóa tất cả các phần tử trong danh sách.
++contains(Object o): Kiểm tra xem danh sách có chứa phần tử chỉ định hay không.
++isEmpty(): Kiểm tra xem danh sách có rỗng hay không.
