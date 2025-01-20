@@ -1,20 +1,32 @@
-ArrayList: Kích thước động. Có thể thay đổi (tăng/giảm) số lượng phần tử.
-*Type:
-Array: Có thể là mảng của kiểu dữ liệu nguyên thủy (primitive types) hoặc đối tượng (objects).
-ArrayList: Chỉ lưu trữ các đối tượng. Nếu muốn lưu kiểu nguyên thủy, cần sử dụng các lớp wrapper
-(như Integer, Double).
-*Hiệu năng:
-Array: Hiệu năng tốt hơn khi làm việc với số lượng lớn phần tử vì không có overhead 
-của việc điều chỉnh kích thước.
-ArrayList: Có overhead khi tăng kích thước, nhưng tiện lợi hơn trong nhiều trường hợp.
-Câu 2:
--Các method phổ biến khi thao tác với ArrayList
-+add(E e): Thêm phần tử vào cuối danh sách.
-+add(int index, E element): Chèn phần tử vào vị trí chỉ định.
-+get(int index): Truy cập phần tử tại vị trí chỉ định.
-+set(int index, E element): Cập nhật phần tử tại vị trí chỉ định.
-+remove(int index): Xóa phần tử tại vị trí chỉ định.
-+size(): Trả về số lượng phần tử trong danh sách.
-+clear(): Xóa tất cả các phần tử trong danh sách.
-+contains(Object o): Kiểm tra xem danh sách có chứa phần tử chỉ định hay không.
-+isEmpty(): Kiểm tra xem danh sách có rỗng hay không.
+1. ArrayList là gì? Sự giống và khác nhau giữa ArrayList và Array
+-ArrayList là một lớp trong thư viện Java Collections Framework, được sử dụng để tạo danh sách có kích thước động. 
+Đây là một danh sách tuần tự cho phép thêm và loại bỏ các phần tử một cách linh hoạt
+-Array là một cấu trúc dữ liệu lưu trữ các phần tử cùng kiểu dữ liệu trong một khối bộ nhớ cố định. Kích thước của mảng không thay đổi sau khi được khởi tạo
+-Sự khác nhau:
++Kích thước:
+ArrayList: Kích thước động, có thể thay đổi trong quá trình chạy chương trình
+Array: Kích thước cố định, không thay đổi sau khi khởi tạo
++Hiệu suất:
+ArrayList: Thao tác chậm hơn do cần phải điều chỉnh kích thước khi thêm/xóa phần tử
+Array: Thao tác nhanh hơn do không cần điều chỉnh kích thước
++Chức năng:
+ArrayList: Cung cấp nhiều phương thức hữu ích như add, remove, set, get,...
+Array: Chỉ cung cấp các thao tác cơ bản như truy xuất, gán giá trị,...
++Loại dữ liệu:
+ArrayList: Chỉ chấp nhận các kiểu đối tượng, không chấp nhận kiểu dữ liệu nguyên thủy
+Array: Chấp nhận cả kiểu đối tượng và kiểu dữ liệu nguyên thủy
+-Sự giống nhau:
+Cả hai đều dùng để lưu trữ các phần tử cùng kiểu dữ liệu
+Truy cập các phần tử thông qua chỉ số (index)
+2. Các method phổ biến khi thao tác với ArrayList
+-Dưới đây là một số phương thức phổ biến của ArrayList trong Java:
++add(E e): Thêm phần tử vào cuối danh sách
++add(int index, E element): Thêm phần tử vào vị trí chỉ định
++remove(int index): Xóa phần tử tại vị trí chỉ định
++remove(Object o): Xóa phần tử đầu tiên xuất hiện của đối tượng chỉ định
++get(int index): Lấy phần tử tại vị trí chỉ định
++set(int index, E element): Gán giá trị mới cho phần tử tại vị trí chỉ định
++size(): Trả về số lượng phần tử trong danh sách
++clear(): Xóa tất cả các phần tử trong danh sách
++contains(Object o): Kiểm tra xem danh sách có chứa đối tượng chỉ định hay không
++isEmpty(): Kiểm tra xem danh sách có rỗng hay không
