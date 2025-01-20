@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class RemoveAnElement {
     public static void main(String[] args){
-            ArrayList<Integer   > number = new ArrayList<>();
+            ArrayList<Integer> number = new ArrayList<>();
             Random random = new Random();
             for(int i=0;i<10;i++){
                 int randomNumber = random.nextInt(100) + 1;
